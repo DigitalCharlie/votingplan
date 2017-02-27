@@ -22,10 +22,8 @@
     <link href="css/votingplan.css" rel="stylesheet"/>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
     <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
-
-    <!-- IF USING JAVASCRIPT
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
-        <script type="text/javascript" src="js/core.js" rel="stylesheet"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="js/core.js" rel="stylesheet"></script>
     -->
 </head>
 <body>
@@ -40,7 +38,6 @@
         <p>Write yourself a little note:<br />
             <textarea id="inputDescription" class="formField" rows="10">THIS IS A MOTHERFUCKING DUMPSTER FIRE AND I'M FUCKING OVER IT SO DON'T FORGET TO VOTE.</textarea>
         </p>
-
 
         <span class="addtocalendar atc-style-blue">
             <var class="atc_event">
@@ -65,18 +62,6 @@
                 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
                 var h = d[g]('body')[0];h.appendChild(s); }})();
     </script>
-
-    <script type="text/javascript">
-        (function() {
-            document.querySelector('.atcb-link').click(function() {
-                var calTitle = document.getElementById("inputTitle").value;
-                document.getElementById("calEventTitle").innerHTML = calTitle;
-                var calDesc = document.getElementById("inputDescription").value;
-                document.getElementById("calEventDescription").innerHTML = calDesc;
-            });
-        });
-    </script>   
-
 
 </body>
 </html>
