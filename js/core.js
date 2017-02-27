@@ -7,6 +7,8 @@ $(function() {
     $("#calEventTitle").text(calTitle);
     var calDesc = $("#inputDescription").val();
     $("#calEventDescription").text(calDesc);
+
+    addtocalendar.load();
   });
 
 });
