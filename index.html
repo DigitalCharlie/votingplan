@@ -24,7 +24,6 @@
     <link href="http://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script type="text/javascript" src="js/core.js" rel="stylesheet"></script>
-    -->
 </head>
 <body>
 
@@ -39,16 +38,16 @@
             <textarea id="inputDescription" class="formField" rows="10">THIS IS A MOTHERFUCKING DUMPSTER FIRE AND I'M FUCKING OVER IT SO DON'T FORGET TO VOTE.</textarea>
         </label>
 
-        <span class="addtocalendar atc-style-blue">
+        <span class="addtocalendar atc-style-blue" data-on-button-click="atcOnButtonClick">
             <var class="atc_event">
-                <var class="atc_date_start">2017-05-04 12:00:00</var>
-                <var class="atc_date_end">2017-05-04 18:00:00</var>
-                <var class="atc_timezone">Europe/London</var>
+                <var class="atc_date_start">2018-11-06 8:00:00</var>
+                <var class="atc_date_end">2018-11-06 20:00:00</var>
+                <var class="atc_timezone">America/New_York</var>
                 <var class="atc_title" id="calEventTitle">Test</var>
                 <var class="atc_description" id="calEventDescription">Test</var>
-                <var class="atc_location">Tatooine</var>
-                <var class="atc_organizer">Luke Skywalker</var>
-                <var class="atc_organizer_email">luke@starwars.com</var>
+                <var class="atc_location">http://yourfuckingpollingplace.com/</var>
+                <var class="atc_organizer">You.</var>
+                <var class="atc_organizer_email">test@example.com</var>
             </var>
         </span>
 
@@ -62,6 +61,17 @@
                 s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
                 var h = d[g]('body')[0];h.appendChild(s); }})();
     </script>
+
+    <script type="text/javascript">
+        function atcOnButtonClick(mouseEvent){
+            console.log( "CLICKING HAPPENED" );
+            var calTitle = document.getElementById("inputTitle").value;
+            document.getElementById("calEventTitle").innerHTML = calTitle;
+            var calDesc = document.getElementById("inputDescription").value;
+            document.getElementById("calEventDescription").innerHTML = calDesc;
+        }
+    </script>
+
 
 </body>
 </html>
