@@ -6,5 +6,5 @@ $(function() {
         var calDesc = document.getElementById("inputDescription").value;
         document.getElementById("calEventDescription").innerHTML = calDesc;
     });
-
+    
 });
