@@ -52,8 +52,8 @@
         border:1px solid black;
     }
 
-    input:focus {
-        outline-color:indianred;
+    .error_input {
+        outline-color:red;
     }
 
 /* Share Buttons */
