@@ -1,29 +1,4 @@
 
-function calendarClick () {
-
-  var showModal = function(selector) {
-    $(selector).css('display', 'block');
-    setTimeout(function() {
-      $(selector).css('opacity', 1);
-    }, 50);
-  };
-
-  var hideModal = function(selector) {
-    $(selector).css('display', 'none');
-    setTimeout(function() {
-      $(selector).css('opacity', 0);
-    }, 50);
-  };
-
-  setTimeout(function(){
-    showModal('#shareModal');
-  }, 1000);
-
-  $("#shareX").click(function() {
-    hideModal('#shareModal');
-  });
-}
-
 function loadCalendar() {
   var calTitle = $("#inputTitle").val();
   $("#calEventTitle").text(calTitle);
@@ -35,15 +10,29 @@ function loadCalendar() {
 
 $(function() {
   
-  $('.addtocalendar').off('click');
-  $('.addtocalendar').on('click', function() {
+  $('.addtocalendar a.atcb-link').on('click', function(event) {
+    console.log('clicked?');
+  });
+
+  $('.addtocalendar').off('mousedown');
+  $('.addtocalendar').on('mousedown', function(event) {
+    event.preventDefault();
+    // event.stopImmediatePropagation();
+
     console.log( "CLICKING HAPPENED" );
-    loadCalendar();
+
+    if($(".want-an-email").is(':checked')) {
+      $('#can-form-area-dont-forget-the-midterms input[type="submit"]').trigger('click');
+    } else {
+      loadCalendar();
+      $('.addtocalendar .atcb-link').focus();
+    }
   });
 
   $(document).on('can_embed_submitted', function() {
     // $('#dont-forget-the-midterms').css('display','none');
     // $('#can-form-thanks').removeClass('hidden').fadeIn();
+    $('form.email-reminder').hide();
     loadCalendar();
     $('.addtocalendar .atcb-link').focus();
   });
