@@ -33,6 +33,7 @@ $(function() {
     // $('#dont-forget-the-midterms').css('display','none');
     // $('#can-form-thanks').removeClass('hidden').fadeIn();
     $('form.email-reminder').hide();
+    $('.want-an-email').attr('checked', false); 
     loadCalendar();
     $('.addtocalendar .atcb-link').focus();
   });
