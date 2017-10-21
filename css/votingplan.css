@@ -265,6 +265,11 @@
     -webkit-transition-duration: .5s;
 }
 
+/* Hide the action network submit button */
+#can-form-area-dont-forget-the-midterms input[type="submit"] {
+  visibility: hidden;
+}
+
 /**
  * AddToCalendar Blue Style
  * http://addtocalendar.com
@@ -288,8 +293,12 @@
     cursor: pointer;
 }
 
+/* Ugly hack to prevent weird flashing of add to calendar list items on submit */
+.atcb-link:active~ul{
+    visibility:hidden !important;
+}
+
 .atcb-link:focus~ul,
-.atcb-link:active~ul,
 .atcb-list:hover{
     visibility:visible;
 }
