@@ -2,6 +2,269 @@
 
 */
 
+/* Global stuff */
+
+    .hidden {
+        display:none;
+    }
+
+    .clear {
+        clear:both;
+    }
+
+/* TYPOGRAPHY */
+    body {
+
+    }
+
+    p {
+
+    }
+
+    h1 {
+
+    }
+
+    h2 {
+
+    }
+
+    h3 {
+
+    }
+
+
+/* HEADER CSS */
+
+/* FOOTER CSS */
+
+/* MAIN BODY CSS */
+
+    .container {
+        width:100%;
+        padding:10px;
+    }
+
+/* FORM FIELDS */
+
+    .formField {
+        width:100%;
+        border:1px solid black;
+    }
+
+    input:focus {
+        outline-color:indianred;
+    }
+
+/* Share Buttons */
+
+    .share-button, .button {
+        width: 100%;
+        margin-bottom:5px;
+    }
+
+    .share-button:hover {
+        background: #ec476b;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .shareButtons {
+        width:100%;
+    }
+
+    button, .btn, .button {
+        display: inline-block;
+        text-align: center;
+        padding:8px 0;
+        font-size: 18px;
+        font-weight: 900;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color:#ffffff;
+        border-radius: 5px;
+        cursor: pointer;
+        border-style: none;
+    }
+
+    .button {
+        background: #71d4dd;
+    }
+
+    button, .btn {
+        background: #ec476b;
+    }
+
+    button:hover, .btn:hover {
+        background: #71d4dd;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .button:hover {
+        background: #ec476b;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;
+    }
+
+    .donate-button {
+        background-color:#ec476b;
+        width:100%;
+    }
+
+    .donate-button:hover {
+        background: #71d4dd;
+        transition-duration: .5s;
+        -webkit-transition-duration: .5s;   
+    }
+
+    .facebook {
+        background: #3b5998;
+    }
+    
+    .twitter {
+        background: #1DA1F2;
+    }
+    
+    .email {
+        background: #ec476b;
+    }
+
+/* MODALS */
+
+    .modal {
+        height: 96%;
+        width: 95%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: rgba(0,0,0, 0.66);
+        overflow-x: hidden;
+        transition: .7s;
+        padding:2.5%;
+        display:none;
+        opacity:0;
+        transition-duration: .7s;
+        -webkit-transition-duration: .7s;
+    }
+
+    .modalContainer {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color:#ffffff;
+        border-radius:10px;
+        z-index: 4;
+        color:#1a1a1a;
+        text-align: center;
+    }
+
+    .modalPage {
+        width: 95%;
+        padding:2.5%;
+    }
+
+    .the-x {
+        cursor:pointer;
+        color:grey;
+        position:absolute;
+        top:10px;
+        right:12px;
+        font-size:14px;
+    }
+
+/* Blog Posts on Home Page */
+
+
+@media screen and (min-width: 650px) {
+
+    /* Type */
+
+        body {
+            background-size:100%;
+        }
+
+        h1 {
+            font-size:3em;
+        }
+
+        h2 {
+            font-size:1.5em;
+        }
+
+        h3 {
+
+        }
+
+        p {
+
+        }
+
+    /* BODY CSS */
+
+        .container {
+            width:800px;
+            max-width:100%;
+            padding:10px;
+            margin:0 auto;
+        }
+
+    /* button styles */
+
+        .shareButtons {
+            max-width:400px;
+            margin:0 auto 5px;
+        }
+
+        .donate-button {
+            width:300px;
+            margin:0 auto;
+            display:block;
+        }
+
+    /* MODALS */
+
+        .modalContainer {
+            width: 600px;
+            height: 500px;
+            max-height:90vh;
+            margin:-250px auto;
+            top:48%;
+        }
+
+        .modalContainer h1 {
+            margin:0 auto 10px;
+            width:500px;
+        }
+
+        .formIcon {
+            width:75px;
+            margin:-5px auto;
+        }
+
+        .formIcon.share {
+            margin-top:5px;
+        }
+
+}
+
+
+/* BASIC FORM REMOVAL STUFF */
+
+#can_embed_form_inner > h2, #can_embed_form_inner > h4, .country_wrap, #d_sharing, #action_info, #logo_wrap, .can_thank_you_wrap {
+    display:none;
+}
+
+#can-form-area-dont-forget-the-midterms {
+    display: none;
+    opacity:0;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+}
+
 /**
  * AddToCalendar Blue Style
  * http://addtocalendar.com
@@ -140,178 +403,3 @@
     background: rgb(66,129,244);
 }
 
-
-
-/* Global stuff */
-
-    .hidden {
-        display:none;
-    }
-
-    .clear {
-        clear:both;
-    }
-
-/* TYPOGRAPHY */
-    body {
-
-    }
-
-    p {
-
-    }
-
-    h1 {
-
-    }
-
-    h2 {
-
-    }
-
-    h3 {
-
-    }
-
-
-/* HEADER CSS */
-
-/* FOOTER CSS */
-
-/* MAIN BODY CSS */
-
-    .container {
-        width:100%;
-        padding:10px;
-    }
-
-/* FORM FIELDS */
-
-    .formField {
-        width:100%;
-        border:1px solid black;
-    }
-
-/* Share Buttons */
-
-    .share-button, .button {
-        width: 100%;
-        margin-bottom:5px;
-    }
-
-    .share-button:hover {
-        background: #ec476b;
-        transition-duration: .5s;
-        -webkit-transition-duration: .5s;
-    }
-
-    .shareButtons {
-        width:100%;
-    }
-
-    button, .btn, .button {
-        display: inline-block;
-        text-align: center;
-        padding:8px 0;
-        font-size: 18px;
-        font-weight: 900;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        text-decoration: none;
-        color:#ffffff;
-        border-radius: 5px;
-        cursor: pointer;
-        border-style: none;
-    }
-
-    .button {
-        background: #71d4dd;
-    }
-
-    button, .btn {
-        background: #ec476b;
-    }
-
-    button:hover, .btn:hover {
-        background: #71d4dd;
-        transition-duration: .5s;
-        -webkit-transition-duration: .5s;
-    }
-
-    .button:hover {
-        background: #ec476b;
-        transition-duration: .5s;
-        -webkit-transition-duration: .5s;
-    }
-
-    .donate-button {
-        background-color:#ec476b;
-        width:100%;
-    }
-
-    .donate-button:hover {
-        background: #71d4dd;
-        transition-duration: .5s;
-        -webkit-transition-duration: .5s;   
-    }
-
-    .facebook {
-        background: #3b5998;
-    }
-    
-    .twitter {
-        background: #1DA1F2;
-    }
-    
-    .email {
-        background: #ec476b;
-    }
-
-/* Blog Posts on Home Page */
-
-
-@media screen and (min-width: 650px) {
-
-    /* Type */
-
-        body {
-            background-size:100%;
-        }
-
-        h1 {
-            font-size:3em;
-        }
-
-        h2 {
-            font-size:1.5em;
-        }
-
-        h3 {
-
-        }
-
-        p {
-
-        }
-
-    /* BODY CSS */
-
-        .container {
-            width:800px;
-            max-width:100%;
-            padding:10px;
-            margin:0 auto;
-        }
-
-    /* button styles */
-
-        .shareButtons {
-            max-width:400px;
-            margin:0 auto 5px;
-        }
-
-        .donate-button {
-            width:300px;
-            margin:0 auto;
-            display:block;
-        }
