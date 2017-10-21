@@ -24,8 +24,6 @@ $(function() {
   $(document).on('can_embed_submitted', function() {
     // $('#dont-forget-the-midterms').css('display','none');
     // $('#can-form-thanks').removeClass('hidden').fadeIn();
-    $('form.email-reminder').hide();
-    $(".want-an-email").prop('checked', false); 
     loadCalendar();
     $('.addtocalendar .atcb-link').focus();
   });
@@ -46,6 +44,12 @@ $(function() {
 });
 
 function calendarClick () {
+
+    if ( $(".want-an-email").is(':checked') ) {
+      $('form.email-reminder').hide();
+      $(".want-an-email").prop('checked', false); 
+    };
+
     var showModal = function(selector) {
       $(selector).css('display', 'block');
       setTimeout(function() {
