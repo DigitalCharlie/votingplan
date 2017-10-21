@@ -37,9 +37,9 @@
 
                 <h1>Help Spread the Word</h1>
 
-                <p>
+              <p style="margin-bottom:20px;">
                     <span style="font-weight:bold;">Share this timeline with your friends to help more people see through the coded language and identify racist policies for what they are.</span>
-                </p style="margin-bottom:20px;">
+              </p>
 
                 <div class="shareButtons">
                     <a class="share-button facebook btn" href="http://www.facebook.com/sharer/sharer.php?u=http://www.gopcausedtrump.com" target="_blank">Share on Facebook</a>
@@ -61,23 +61,20 @@
 
         <h1>You're pissed now. Don't forget it. Mark your calendar for the midterm and write yourself a note.</h1>
 
-        <label for="inputTitle" id="eventTitleLabel">Title your Event:
-            <input type="text" name="inputTitle" id="inputTitle" class="formField" value="Vote in the fucking midterms">
-        </label>
+        <label for="inputTitle" id="eventTitleLabel">Title your Event:</label>
+        <input type="text" name="inputTitle" id="inputTitle" class="formField" value="Vote in the fucking midterms" form="new_answer" />
 
-        <label for="inputDescription" id="eventDescriptionLabel">Write yourself a little note:
-            <textarea id="inputDescription" class="formField" rows="10">THIS IS A MOTHERFUCKING DUMPSTER FIRE AND I'M FUCKING OVER IT SO DON'T FORGET TO VOTE.</textarea>
-        </label>
+        <label for="inputDescription" id="eventDescriptionLabel">Write yourself a little note:</label>
+        <textarea id="inputDescription" class="formField" rows="10" form="new_answer">THIS IS A MOTHERFUCKING DUMPSTER FIRE AND I'M FUCKING OVER IT SO DON'T FORGET TO VOTE.</textarea>
 
-        <form><input type="checkbox" class="want-an-email">Would you like an email reminder just before the election?</form>
-
-        <script src='https://actionnetwork.org/widgets/v2/form/dont-forget-the-midterms?format=js&source=widget'></script><div id='can-form-area-dont-forget-the-midterms' style='width: 100%'><!-- this div is the target for our HTML insertion --></div>
+        <input type="checkbox" class="want-an-email" id="want-email" form="new_answer"><label for="want-email">Would you like an email reminder just before the election?</label>
+        <div id="can-form-area-dont-forget-the-midterms" style="width: 100%"><!-- this div is the target for our HTML insertion --></div>
 
         <div id="can-form-thanks" class="hidden text-small box-small">
             <p>Great! You'll get an email a week before the election with your note to yourself.</p>
         </div>
 
-        <span class="addtocalendar atc-style-blue" name="commit" type="submit" data-on-calendar-click="calendarClick">
+        <span class="addtocalendar atc-style-blue" data-on-calendar-click="calendarClick" id="calendar-button">
             <var class="atc_event">
                 <var class="atc_date_start">2018-11-06 8:00:00</var>
                 <var class="atc_date_end">2018-11-06 20:00:00</var>
@@ -92,22 +89,9 @@
 
     </div>
 
-    <script type="text/javascript">(function () {
-            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
-            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
-                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
-                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
-                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
-                var h = d[g]('body')[0];h.appendChild(s); }})();
-    </script>
-    <script type="text/javascript" src="js/core.js" rel="stylesheet"></script>
-
-    <script>
-        jQuery(document).on('can_embed_submitted', function() {
-            jQuery('#dont-forget-the-midterms').css('display','none');
-            jQuery('#can-form-thanks').removeClass('hidden').fadeIn();
-        });
-    </script>
+    <script src="https://actionnetwork.org/widgets/v2/form/dont-forget-the-midterms?format=js&source=widget"></script>
+    <script src="http://addtocalendar.com/atc/1.5/atc.min.js"></script>
+    <script defer type="text/javascript" src="js/core.js"></script>
 
 </body>
 </html>
