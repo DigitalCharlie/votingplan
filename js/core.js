@@ -1,4 +1,12 @@
 
+$('#inputTitle').on('keypress keyup blur', function() {
+    $('#an_event_title').val($(this).val());
+});
+
+$('#inputDescription').on('keypress keyup blur', function() {
+    $('#an_event_description').val($(this).val());
+});
+
 function loadCalendar() {
   var calTitle = $("#inputTitle").val();
   $("#calEventTitle").text(calTitle);
@@ -14,6 +22,7 @@ $(function() {
   $('.addtocalendar').on('mousedown', function(event) {
 
     if($(".want-an-email").is(':checked')) {
+
       event.preventDefault();
       $('#can-form-area-dont-forget-the-midterms input[type="submit"]').trigger('click');
     } else {
