@@ -48,7 +48,7 @@
 /* FORM FIELDS */
 
     .formField {
-        width:100%;
+        width:100% !important;
         border:1px solid black;
     }
 

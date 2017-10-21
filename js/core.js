@@ -13,14 +13,14 @@ $(function() {
 
 });
 
-/*$(function() {
+$(function() {
   
   $('.addtocalendar').on('click', function() {
   	$("#new_answer").submit();
   });
 
 });
-*/
+
 
 $(".want-an-email").change(function() {
     if ( $(this).is(':checked') ) {
