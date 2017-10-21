@@ -10,22 +10,14 @@ function loadCalendar() {
 
 $(function() {
   
-  $('.addtocalendar a.atcb-link').on('click', function(event) {
-    console.log('clicked?');
-  });
-
   $('.addtocalendar').off('mousedown');
   $('.addtocalendar').on('mousedown', function(event) {
-    event.preventDefault();
-    // event.stopImmediatePropagation();
-
-    console.log( "CLICKING HAPPENED" );
 
     if($(".want-an-email").is(':checked')) {
+      event.preventDefault();
       $('#can-form-area-dont-forget-the-midterms input[type="submit"]').trigger('click');
     } else {
       loadCalendar();
-      $('.addtocalendar .atcb-link').focus();
     }
   });
 
