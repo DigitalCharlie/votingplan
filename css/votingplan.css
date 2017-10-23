@@ -66,8 +66,14 @@
     .footer {
         background-color: #494744;
         color:#fff;
-        min-height:15vh;
+        text-align: center;
+        min-height:125px;
+        position: absolute;
+        width: 100%;
+        bottom: -30%;
     }
+
+
 
 /* MAIN BODY CSS */
 
@@ -366,6 +372,10 @@
 
     .dumpsterimage {
         width:145px;
+    }
+
+    .footer {
+        bottom: -5%;
     }
 
 }
