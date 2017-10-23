@@ -20,22 +20,26 @@
     }
 
     p {
+        font-size: 1em;
+        font-weight:100;
 
     }
 
     h1 {
         font-size: 3.5em;
         font-weight: 900;
-        margin: 15px 0;
+        margin: 25px 0;
     }
 
     h2 {
-
+        font-size: 2.5em;
+        font-weight: 900;
+        margin: 10px 0;
     }
 
     h3 {
-        font-weight: 100;
-        font-size:1em;
+
+        font-size:1.5em;
     }
 
     label {
