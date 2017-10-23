@@ -40,6 +40,7 @@ $(function() {
 
   $(".want-an-email").change(function() {
       if ( $(this).is(':checked') ) {
+        $("#form-zip_code").attr("size", "15");
         $("#can-form-area-dont-forget-the-midterms").css('display', 'block');
         setTimeout(function() {
             $("#can-form-area-dont-forget-the-midterms").css('opacity', 1);

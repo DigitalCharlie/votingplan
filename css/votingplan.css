@@ -90,15 +90,22 @@
 
 /* FORM FIELDS */
 
-    .formField {
-        width:95% !important;
+    .formField, #form-email, #form-zip_code {
         border:1px solid #bbb;
-        margin: 5px 0 20px;
         background-color:#f1eeea;
         border-radius: 3px;
         padding: 2.5%;
         font-size: .8em;
         font-family: 'Alegreya', serif;
+    }
+
+    .formField {
+        width:95% !important;
+        margin: 5px 0 20px;
+    }
+
+    #form-email, #form-zip_code {
+
     }
 
     textarea, input {
@@ -115,6 +122,10 @@
 
     .want-an-email {
         margin-right:8px;
+    }
+
+    #form_col1 {
+        margin-bottom:15px;
     }
 
 /* Share Buttons */
@@ -410,6 +421,7 @@
     background: transparent!important;
     width:172px;
     text-align: center;
+    margin-top:10px;
 }
 
 .atcb-link {
