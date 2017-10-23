@@ -26,7 +26,7 @@
     }
 
     h1 {
-        font-size: 3.5em;
+        font-size: 2.8em;
         font-weight: 900;
         margin: 25px 0;
     }
@@ -55,7 +55,7 @@
     }
 
     hr {
-        margin:35px 0;
+        margin:30px 0;
     }
 
 
@@ -74,14 +74,18 @@
     .container {
         width:95%;
         max-width:475px;
-        padding:2.5%;
+        padding:0 2.5%;
         min-height:85vh;
+        margin:0 auto;
     }
 
     .dumpster {
-        position:absolute;
-        left:75%;
-        top:30%;
+        text-align:center;
+    }
+
+    .dumpsterimage {
+        width:70px;
+        margin:-15px 0 -20px;
     }
 
 /* FORM FIELDS */
@@ -234,8 +238,7 @@
 
 /* Blog Posts on Home Page */
 
-
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 500px) {
 
     /* Type */
 
@@ -244,7 +247,7 @@
         }
 
         h1 {
-
+            font-size: 3.5em;
         }
 
         h2 {
@@ -262,14 +265,17 @@
     /* GENERAL DESIGN */
 
         .dumpster {
-            margin-top:-75px;
+
+        }
+
+        .dumpsterimage {
+
         }
 
     /* BODY CSS */
 
         .container {
-            padding:10px;
-            margin:0 auto;
+
         }
 
     /* button styles */
@@ -312,6 +318,60 @@
 
 }
 
+@media screen and (min-width: 530px) {
+
+        .dumpster {
+            position:absolute;
+            left:85%;
+            top:33%;
+        }
+
+        .dumpsterimage {
+            margin:initial;
+            width:75px;
+        }
+
+}
+
+@media screen and (min-width: 600px) {
+
+        .dumpster {
+            left:82%;
+            top:30%;
+        }
+
+        .dumpsterimage {
+            width:100px;
+        }
+
+}
+
+@media screen and (min-width: 775px) {
+
+    .dumpster {
+        left:75%;
+        top:23%;
+    }
+
+    .dumpsterimage {
+        width:145px;
+    }
+
+}
+
+@media screen and (min-width: 950px) {
+
+    .dumpster {
+        left:75%;
+        top:20%;
+    }
+
+    .dumpsterimage {
+        width:inherit;
+    }
+
+}
+
 
 /* BASIC FORM REMOVAL STUFF */
 
@@ -336,6 +396,8 @@
  * http://addtocalendar.com
  */
 
+/* my modifications */
+
 /* Base */
 
 .addtocalendar var{
@@ -346,6 +408,8 @@
     position: relative;
     display: inline-block;
     background: transparent!important;
+    width:172px;
+    text-align: center;
 }
 
 .atcb-link {

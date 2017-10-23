@@ -1,4 +1,3 @@
-
 $('#inputTitle').on('keypress keyup blur', function() {
     $('#an_event_title').val($(this).val());
 });
@@ -20,6 +19,8 @@ $(function() {
   
   $('.addtocalendar').off('mousedown');
   $('.addtocalendar').on('mousedown', function(event) {
+
+    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
 
     if($(".want-an-email").is(':checked')) {
 
