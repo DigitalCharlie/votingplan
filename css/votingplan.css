@@ -400,7 +400,7 @@
 
         .dumpster {
             position:absolute;
-            left:85%;
+            left:88%;
             top:33%;
         }
 
@@ -411,10 +411,10 @@
 
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 650px) {
 
         .dumpster {
-            left:82%;
+            left:84%;
             top:30%;
         }
 
@@ -427,7 +427,7 @@
 @media screen and (min-width: 775px) {
 
     .dumpster {
-        left:75%;
+        left:79%;
         top:23%;
     }
 
