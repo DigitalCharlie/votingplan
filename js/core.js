@@ -12,7 +12,7 @@ $(function() {
   $('.addtocalendar').off('mousedown');
   $('.addtocalendar').on('mousedown', function(event) {
 
-    $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    // $("html, body").animate({ scrollTop: $(document).height() }, "slow");
     $('#an_event_description').val($('#inputDescription').val());
     $('#an_event_title').val($('#inputTitle').val());
 
