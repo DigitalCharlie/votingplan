@@ -123,7 +123,7 @@
     }
 
     .formField {
-        width:95% !important;
+        width:94% !important;
         margin: 5px 0 20px;
     }
 
@@ -310,6 +310,16 @@
     }
 
 /* Blog Posts on Home Page */
+
+@media screen and (max-width: 375px) {
+
+    #form-email, #form-zip_code {
+        width: 94%;
+        margin-top: 5px;
+    }
+
+}
+
 
 @media screen and (min-width: 500px) {
 
