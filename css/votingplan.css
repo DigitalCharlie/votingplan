@@ -275,6 +275,7 @@
     /* MODALS */
 
         .modalContainer {
+            position: relative;
             width: 600px;
             height: 500px;
             max-height:90vh;
