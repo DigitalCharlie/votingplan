@@ -59,6 +59,7 @@ function calendarClick () {
       $(selector).css('display', 'block');
       setTimeout(function() {
         $(selector).css('opacity', 1);
+        $('#cookie-gif').trigger('click');
       }, 50);
     };
 
