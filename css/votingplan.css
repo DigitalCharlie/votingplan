@@ -301,7 +301,7 @@
 
 /* BASIC FORM REMOVAL STUFF */
 
-#can_embed_form_inner > h2, #can_embed_form_inner > h4, .country_wrap, #d_sharing, #action_info, #logo_wrap, .can_thank_you_wrap, .form_builder_output {
+#can_embed_form_inner > h2, #can_embed_form_inner > h4, .country_wrap, #d_sharing, #action_info, #logo_wrap, .can_thank_you_wrap, .form_builder_output, #form_col2 {
     display:none;
 }
 
