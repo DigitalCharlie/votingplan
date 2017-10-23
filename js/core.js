@@ -57,14 +57,15 @@ function calendarClick () {
 
     var showModal = function(selector) {
       $(selector).css('display', 'block');
+      $('.atcb-list').css('display', 'none');
       setTimeout(function() {
         $(selector).css('opacity', 1);
-        $('#cookie-gif').trigger('click');
       }, 50);
     };
 
     var hideModal = function(selector) {
       $(selector).css('display', 'none');
+      $('.atcb-list').css('display', 'initial');
       setTimeout(function() {
         $(selector).css('opacity', 0);
       }, 50);
