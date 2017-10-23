@@ -1,11 +1,3 @@
-$('#inputTitle').on('keypress keyup blur', function() {
-    $('#an_event_title').val($(this).val());
-});
-
-$('#inputDescription').on('keypress keyup blur', function() {
-    $('#an_event_description').val($(this).val());
-});
-
 function loadCalendar() {
   var calTitle = $("#inputTitle").val();
   $("#calEventTitle").text(calTitle);
@@ -21,6 +13,8 @@ $(function() {
   $('.addtocalendar').on('mousedown', function(event) {
 
     $("html, body").animate({ scrollTop: $(document).height() }, "slow");
+    $('#an_event_description').val($('#inputDescription').val());
+    $('#an_event_title').val($('#inputTitle').val());
 
     if($(".want-an-email").is(':checked')) {
 
@@ -83,3 +77,11 @@ function calendarClick () {
       hideModal('#shareModal');
     });
 }
+
+//$('#inputTitle').on('keypress keyup blur', function() {
+//    $('#an_event_title').val($(this).val());
+//});
+
+//$('#inputDescription').on('keypress keyup blur', function() {
+//    $('#an_event_description').val($(this).val());
+//});
