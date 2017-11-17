@@ -356,10 +356,6 @@
 
         }
 
-    hr {
-        margin:15px 0;
-    }
-
     /* BODY CSS */
 
         .container {
@@ -425,6 +421,10 @@
 
         .dumpsterimage {
             width:100px;
+        }
+
+        hr {
+            margin:15px 0;
         }
 
 }
